@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+
+    .pricing-container{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .pricing-plan{
+      flex: 1;
+      max-width: 400px;
+      background-color: #ebecf0;
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .plan-title{
+      font-family: 'Playpen Sans', cursive;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .plan-price{
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .plan-features{
+      display: flex;
+      flex-direction: column;
+      font-family: 'Playpen Sans', cursive;
+    }
+
+    .plan-button{
+      padding: 10px;
+      background-color: orangered;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container{
+      flex-direction: column;
+      height: 100%;
+      }
+      .pricing-plan{
+        flex: 1;
+      }
+    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <div class="plan-features">
+        <p>✅ 10GB Storage</p>
+        <p>✅ 1 User</p>
+        <p>🚫 Support</p>
+      </div>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <div class="plan-features">
+        <p>✅ 50GB Storage</p>
+        <p>✅ 5 Users</p>
+        <p>✅ Phone &amp; Email Support</p>
+      </div>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <div class="plan-features">
+        <p>✅ 100GB Storage</p>
+        <p>✅ 10 Users</p>
+        <p>✅ 24/7 Support</p>
+      </div>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
